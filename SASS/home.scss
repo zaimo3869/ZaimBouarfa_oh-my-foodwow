@@ -1,0 +1,206 @@
+
+$color-prime:#9356DC;
+$color-back-prime:#ececec;
+$color-back-seconde: #ececec;
+$color-footer:rgba(23, 23, 23, 0.8);
+
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+html body{
+p{
+    font-family: 'Roboto', sans-serif;
+}
+}
+
+.img-logo{ height: 30px;} 
+header{
+    
+    width: auto;
+    height: 65px;
+    box-shadow: 0 2px 4px #636363cc;
+    
+.title{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+    div .title{
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+      
+    }
+     .arrow-back{
+        left: 20px;
+        position: absolute;
+       } 
+    
+}
+.link-localisation{
+    display: flex;
+}
+/*Explore menu*/
+.explore__menu{
+    background-color: #ececec;
+    height: 200PX;
+    justify-content: space-between;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-bottom: 20PX;
+    padding-bottom: 20px;
+    h2{
+        padding-bottom: 20px;
+    }
+    
+    
+    
+}
+.tutorial{
+    padding-left: 5%;
+    margin-bottom: 40px;
+    h2{
+        padding-left: 0px; 
+    }
+}
+
+
+.header__bis{
+    background-color: #d3d3d3;
+    height: 50px;
+    .link-localisation{
+        text-decoration: none;
+        font-weight: bold;
+        color: black;
+        display: flex;
+        justify-content: space-between;
+        width: 120px;
+    }
+    }
+    ol{
+    height: 350px;
+    padding: 0px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    a{
+        text-decoration: none;
+        box-shadow: 2px 2px 2px 7px #d3d3d3;
+        border-radius: 20px;
+        width: 90%;
+    }
+    }
+    li{
+
+        height: 40px;
+        background-color: #ececec;
+        border-radius: 20px;
+        display: flex;
+        
+        padding: 27px;
+            .text{
+                display: flex;
+                justify-content: space-between;
+                width: 240px;
+                align-items: center;
+            
+            .numb-tuto{
+                background:$color-prime ;
+                border-radius: 20px;
+                margin-left: -20%;
+                height: 27px;
+                width: 27px;
+                color: white;
+                font-weight: bold;
+                text-align: center;
+            }
+        }
+        
+    }
+    
+    /*Restaurant------------*/
+.Restaurant{
+    height: 1000px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color:#ececec;
+    .restaurant{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 1000px;
+    }
+    .Restaurant__card{
+        height: 200px;
+        background-color: white;
+        border-radius: 25px;
+        width: 80%;
+        box-shadow: 2px 2px 7px #d3d3d3;
+        &.Restaurant__card:hover{
+            box-shadow: 2px 2px 7px #696767;
+        }
+        .Restaurant__card--img{
+            height:70%;
+            width: 100%;
+            border-radius: 25px 25px 0px 0px;
+            object-fit: cover;
+        }
+        
+        .text-cards{
+            margin: 5px 0px 5px 15px;
+    font-weight: bold;
+    font-size: 1rem;
+    display: inline-flex;
+    flex-direction: column;
+        }
+    }
+   
+}
+.Restaurant__card--prev{
+    position: relative;
+    right: 20px;
+    top: -120px;
+    right: 20px;
+    float: right;
+    height: 39px;
+    width: 89px;
+    background: #99E2D0;
+    border-radius: 2px;
+    span{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        padding: 8px;
+    
+    }
+}
+
+/*Footer*/
+footer{
+    background-color: $color-footer;
+    color: white;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    h1{
+        padding-left: 0px;
+    }
+}
+
+/*Responssive -------------------*/
+
+@media  screen and (min-width:750px){
+   
+
+        .Restaurant__card{
+            width: 90%;
+            
+    }
+    
+}

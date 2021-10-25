@@ -1,0 +1,159 @@
+.back-pic {
+  height: 340px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center bottom;
+     object-position: center bottom;
+}
+
+.page-bloc {
+  height: 1100px;
+  background-color: #ececec;
+  position: relative;
+  border-radius: 45px 45px 0px 0px;
+  margin-top: -50px;
+  padding-bottom: 10px;
+}
+
+.fas.fa-heart {
+  right: 12%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(to bottom, #FF79DA 0%, #9356DC 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0;
+  position: absolute;
+  font-size: 1.3rem;
+}
+
+.far.fa-heart {
+  right: 12%;
+  position: absolute;
+  font-size: 1.3rem;
+}
+
+aside {
+  margin: 0px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+aside button {
+  margin-left: 16%;
+}
+
+article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+article .page__text {
+  margin: 0 15px 15px 0;
+  background: white;
+  height: 70px;
+  width: 100%;
+  border-radius: 20px;
+  -webkit-box-shadow: 2px 2px 7px #d3d3d3;
+          box-shadow: 2px 2px 7px #d3d3d3;
+  position: relative;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+article .page__text:hover {
+  -webkit-transform-origin: left 50%;
+          transform-origin: left 50%;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+article .page__text:hover p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+article .page__text:hover p {
+  margin-right: 0px;
+}
+
+article .page__text:hover .check-icon {
+  -webkit-transform-origin: left 70%;
+          transform-origin: left 70%;
+  -webkit-transform: translateX(1px);
+          transform: translateX(1px);
+}
+
+article .page__text h3 {
+  font-weight: bolder;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+article .page__text .page__text--flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+}
+
+article .page__text p {
+  margin-left: 10px;
+  width: 80%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+article .page__text span {
+  margin-right: 10px;
+  font-weight: bolder;
+}
+
+.inline-border {
+  height: 5px;
+  width: 70px;
+  background-color: #99E2D0;
+  margin-top: -10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+span.footer-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 132px;
+}
+/*# sourceMappingURL=restaurant.css.map */

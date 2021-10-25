@@ -1,0 +1,47 @@
+@import "./home.scss";
+@import "./restaurant.scss";
+@import "./mixins.scss";
+@import "./animations.scss";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+/*Generale !*/
+html{
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    width: auto;
+    height: auto;
+    font-size: 1rem;
+    font: black;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    
+}
+
+h1{
+    font-family: 'Shrikhand', cursive;
+    font-size: 1.3rem;
+    margin: 0px;
+    padding: 10px 10px 0px 15px;
+}
+h2{ 
+    font-weight: bold;
+    margin: 0px;
+    padding:20px 20px 20px;
+}
+h3{
+margin: 0px;
+padding: 0px;
+font-weight: bolder;
+}
+
+p{
+    margin: 0px;
+    padding: 0px;
+}
+a{
+    text-decoration: none;
+}
+/*Police*/

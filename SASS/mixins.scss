@@ -1,0 +1,54 @@
+/*Mixin------------*/
+
+$color-prime:#9356DC;
+$color-back-prime:#ececec;
+@mixin center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin border {
+    box-shadow: 2px 2px 2px 7px $color-back-prime;
+}
+@mixin button {
+    background: linear-gradient(#FF79DA, #9356DC);
+    border-radius: 20px;
+    border: thin;
+    height: 50px;
+    width: 70%;
+    font-weight: bold;
+    margin-top: 5px;
+    color: white;
+    &:hover{
+        background: linear-gradient(#9356DC, #ae80e5);
+    }
+}
+/*Code--------------*/
+header{
+    @include center;
+}
+.header__bis{
+    @include center;
+}
+.explore__menu{
+    @include center;
+    flex-direction: column;
+    text-align: center
+}
+
+.restaurant{
+    @include center;
+    
+}
+li{
+    @include border;
+}
+article{
+    @include center;
+}
+.Restaurant__card{
+    @include border;
+}
+button{
+    @include button;
+}

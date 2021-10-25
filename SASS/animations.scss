@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+
+/*value-----------------*/
+
+$color-prime:#9356DC;
+$color-sec:#FF79DA ;
+$color-ter:#99E2D0;
+
+/*loader-----------------*/
+
+
+div.loader__spiner{
+    width: 10px;
+    height: 10px;
+    border:  solid transparent;
+    border-radius: 50%;
+    border-left-color:$color-sec ;
+    border-right-color: $color-ter;
+    animation-name: anime ;
+    transition: 2000ms;
+    position: relative;
+    display: flex;
+    opacity: 0;
+    justify-content: center;
+    align-items: center;
+}
+p.loader__spiner--text{
+    margin: 0% 50% 0% 40%;
+    font-family: 'Shrikhand', cursive;
+    opacity: 0;
+    font-size: 1.5rem;
+    
+}
+
+.loader__spiner::before{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border:  solid transparent;
+    border-radius: 50%;
+    border-left-color:$color-ter ;
+    border-right-color: $color-sec;
+    animation: spin__reverse 1s infinite linear;
+    opacity: 0;
+}
+.loader__spiner::after{
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border:  solid transparent;
+    border-radius: 50%;
+    border-left-color:$color-ter ;
+    border-right-color: $color-sec;
+    animation: spin 2s infinite linear;
+    opacity: 0;
+}
+
+.loader{
+    animation-name: apparition;
+    animation-duration: 7s;
+    height: 0px;
+            div.loader__spiner{
+                opacity: 0;      
+                animation-duration: 9s;   
+                border-radius: none;
+                animation-name: apparition--spin ;
+                overflow: visible;
+                margin-left: 50%;
+                
+                &.loader__spiner::before{
+                    content: "";
+                    position: absolute;
+                    width: 10px;
+                    height: 10px;
+                    border:  solid transparent;
+                    border-radius: 50%;
+                    border-left-color:$color-ter ;
+                    border-right-color: $color-sec;
+                    animation: spin__reverse 1s infinite linear;
+                    opacity: 1;
+                }
+                &.loader__spiner::after{
+                    content: "";
+                    position: absolute;
+                    width: 20px;
+                    height: 20px;
+                    border:  solid transparent;
+                    border-radius: 50%;
+                    border-left-color:$color-ter ;
+                    border-right-color: $color-sec;
+                    animation: spin 2s infinite linear;
+                    opacity: 1;
+                }
+                
+            }
+        
+        }
+        
+
+
+
+
+/*KEYFAME-----Animation---------------*/
+
+
+@keyframes apparition--spin{
+    0%{height: 0px;
+        opacity: 0;
+    }
+    50%{height: 10vh;
+        opacity: 1;transform: translateY(50%);
+    }
+    100%{
+        height: 0px;
+        opacity: 0;
+
+    }
+}
+@keyframes apparition{
+    0%{height: 0px;
+        opacity: 0;
+    }
+    50%{height: 100vh;
+        opacity: 1;transform: translateY(200px);
+    }
+    100%{
+        height: 0px;
+        opacity: 0;
+
+    }
+}
+@keyframes spin{
+    from{
+        opacity: 0;
+        transform: scale(0) rotate(0deg) ;
+    }
+    to{     
+        opacity: 1; 
+        transform: scale(1) rotate(360deg);
+    }
+}
+@keyframes spin__reverse{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(-360deg);
+    }
+}
+@keyframes anime{
+    0%{height: 0px;
+        opacity: 0;
+        transform:scale(0) rotate(0deg);
+    }
+    50%{ height: 80vh;
+        opacity: 1;
+        transform:scale(1) rotate(-360deg);
+    }
+    100%{opacity: 0;
+        height: 0px;
+        transform:scale(0)
+    }
+}
+
+
+
+
+
+/*heart-----------------------------*/
+
+        .fas.fa-heart:hover {
+            transition: 1000ms;
+            opacity: 1;
+            transform-origin:  TRANSITION bottom;
+        }
+        
+ 
+/*tuto----------------------*/
+ol{
+    a :hover{
+        transform: scale(1.04);
+        background-color: #f2eafb;
+        }
+}         
+/*check----------------------*/
+
+.page__text{
+        &:hover{
+           
+transform-origin: left;
+& span{
+    transform: translateX(-100px);
+    margin-right: -20px;
+ }p{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 50%;
+}
+i{
+    color: white;
+    animation: spin__reverse 1s ease-out;
+}
+        }
+        
+        h3{
+            white-space: nowrap;
+            font-size: 1rem;
+        }
+
+.check-icon {  
+    position: absolute;
+    background-color: #99E2D0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 65px;
+    transform-origin: right 50%;
+    border-radius: 0px 20px 20px 0px;
+    transform: translateX(65px);
+    overflow: hidden;
+    transition-duration: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    i{
+        color: white;
+       
+    }
+
+    }
+
+}
+/*Card--------------------------*/
+
+
+
+/*keyfram---------------------*/
+
+
+
+@keyframes myframe{
+    from{
+        
+        
+        transform: translateY(40px);
+    }
+    to{
+        
+        
+        transform: translateY(0px);
+    }
+}
+.page__text{
+    animation-name: myframe;
+    animation-duration: 1s;
+    transform-origin: right;
+
+}
